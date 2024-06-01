@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/tvEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Question"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvEditTextQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question:"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/etQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter question" />
+
+    <TextView
+        android:id="@+id/tvEditTextAnsA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Answer 1:"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etAnswer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter answer 1" />
+
+    <TextView
+        android:id="@+id/tvEditTextAnsB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Answer 2:"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etAnswer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter answer 2" />
+
+    <TextView
+        android:id="@+id/tvEditTextAnsC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Answer 3:"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/etAnswer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter answer 3" />
+    <TextView
+        android:id="@+id/tvEditTextAnsD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Answer 4:"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/etAnswer4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter answer 4" />
+
+    <TextView
+        android:id="@+id/tvEditTextCorAns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Correct Answer:"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/etCorrectAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter correct answer" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:textAlignment="center" />
+</LinearLayout>

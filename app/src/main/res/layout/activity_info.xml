@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white"
+    tools:context=".ComputerDifficulty">
+
+
+    <LinearLayout
+        android:layout_width="331dp"
+        android:layout_height="521dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/font"
+            android:textSize="30dp"
+            android:text="Before you start..."
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/textView2"
+            app:layout_constraintVertical_bias="0.5" />
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/font"
+            android:textColor="#000000"
+            android:text="Each Quiz has 10 questions and 4 answers to choose from with a timer of 1 minute."
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/textView2"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/font"
+            android:textColor="#000000"
+            android:text="A voice recognition feature is available. It can be used by pressing the button and saying 'one', 'two', 'three' or 'four'. Speaking 'one' will select the first answer in the list and so on."
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView1"
+            app:layout_constraintBottom_toTopOf="@id/textView3" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/font"
+            android:textSize="24dp"
+            android:textColor="#000000"
+            android:text="Good Luck, Have Fun!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView3"/>
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back to Home"
+            android:background="@drawable/rounded_corners_two"
+            android:layout_marginBottom="10dp"
+
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/font"/>
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

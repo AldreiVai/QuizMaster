@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white"
+    tools:context=".ComputerDifficulty">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutCounters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/dollar" />
+        <TextView
+            android:id="@+id/tvCoinsCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font"
+            android:text=" : 0"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_marginEnd="32dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/twox" />
+        <TextView
+            android:id="@+id/tvScorex2Counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font"
+            android:text=" : 0"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_marginEnd="32dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/right_arrow" />
+        <TextView
+            android:id="@+id/tvSkipCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font"
+            android:text=" : 0"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_marginEnd="32dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/seconds" />
+        <TextView
+            android:id="@+id/tv30SecCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font"
+            android:text=" : 0"
+            android:textColor="#000000"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvCoins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/font"
+                android:text="Buy Coins!"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/dollar" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/btnHelp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/btnCoins10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buy 10 Coins"
+            android:layout_marginBottom="10dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/font"/>
+
+
+        <Button
+            android:id="@+id/btnCoins50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buy 50 Coins"
+            android:layout_marginBottom="10dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/font"/>
+
+        <Button
+            android:id="@+id/btnCoins100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buy 100 Coins"
+            android:layout_marginBottom="10dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/font"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:padding="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/font"
+                android:text="Buy Power-Ups!"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_marginEnd="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+
+
+            <TextView
+                android:id="@+id/tvScorex2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/font"
+                android:text="Buy Scorex2"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_marginEnd="10dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                app:srcCompat="@drawable/twox" />
+            <Button
+                android:id="@+id/btnScorex2_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Buy 5 Score x2"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/font" />
+
+            <Button
+                android:id="@+id/btnScorex2_10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Buy 10 Score x2"
+                android:layout_marginStart="10dp"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/font" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvSkip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/font"
+                android:text="Buy Skip"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_marginEnd="10dp" />
+            <ImageView
+
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                app:srcCompat="@drawable/right_arrow" />
+            <Button
+                android:id="@+id/btnSkip5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Buy 5 Skip"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/font" />
+
+            <Button
+                android:id="@+id/btnSkip10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Buy 10 Skip"
+                android:layout_marginStart="10dp"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/font" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv30Sec"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/font"
+                android:text="Buy 30 Sec"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_marginEnd="10dp" />
+            <ImageView
+
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/seconds" />
+            <Button
+                android:id="@+id/btn30Sec_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Buy 5 30 Sec"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/font" />
+
+            <Button
+                android:id="@+id/btn30Sec_10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Buy 10 30 Sec"
+                android:layout_marginStart="10dp"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/font" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/btnHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="About Power-Ups"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/font"
+            android:layout_marginLeft="10dp"/>
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Back to Home"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/font"
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

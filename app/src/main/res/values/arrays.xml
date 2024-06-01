@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="table_options">
+        <item>computer_easy</item>
+        <item>computer_medium</item>
+        <!-- Add more table options here -->
+    </string-array>
+</resources>

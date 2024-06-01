@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white"
+    tools:context=".ComputerDifficulty">
+
+
+    <LinearLayout
+    android:layout_width="331dp"
+    android:layout_height="521dp"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/font"
+            android:textSize="30dp"
+            android:text="Power-Ups"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/textView2"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/font"
+            android:textColor="#000000"
+            android:text="All of the power-ups costs 1 coin each."
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/textView2"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/font"
+            android:textColor="#000000"
+        android:text="Score x2 is a power-up that can double your score in the end of a quiz. You can only use this once per quiz."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textView2"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/font"
+        android:textColor="#000000"
+        android:text="Skip is a power-up that will select the correct answers for you and skip the question. You can use this multiple times in a quiz."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView1"
+        app:layout_constraintBottom_toTopOf="@id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/font"
+        android:textColor="#000000"
+        android:text="30 sec is a power-up that will add 30 sec to your timer. You can only use this once per quiz."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView3"/>
+
+        <Button
+            android:id="@+id/btnShop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back to Shop"
+            android:background="@drawable/rounded_corners_two"
+            android:layout_marginBottom="10dp"
+
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/font"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/questionTableInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Quiz table to manage:"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnC_easy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Computer Easy"
+            android:textAlignment="center"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnC_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Computer Medium"
+            android:textAlignment="center"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnC_hard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Computer Hard"
+            android:textAlignment="center"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnT_easy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trivia Easy"
+            android:textAlignment="center"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnT_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trivia Medium"
+            android:textAlignment="center"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnT_hard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trivia Hard"
+            android:textAlignment="center"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnM_easy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Music Easy"
+            android:textAlignment="center"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnM_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Music Medium"
+            android:textAlignment="center"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnM_hard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Music Hard"
+            android:textAlignment="center"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>

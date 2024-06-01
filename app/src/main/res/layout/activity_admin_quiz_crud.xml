@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+
+    <TextView
+        android:id="@+id/tvViewText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Table Contents"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/tvInsertText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert Questions"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter question" />
+
+    <EditText
+        android:id="@+id/etAnswer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter answer 1" />
+
+    <EditText
+        android:id="@+id/etAnswer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter answer 2" />
+
+    <EditText
+        android:id="@+id/etAnswer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter answer 3" />
+
+    <EditText
+        android:id="@+id/etAnswer4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter answer 4" />
+
+    <EditText
+        android:id="@+id/etCorrectAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter correct answer" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insert"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/tvDeleteText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Question"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etDeleteQuestionId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter question ID to delete"
+        android:inputType="number"
+        android:digits="0123456789"/>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/tvEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Question"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etEditQuestionId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter question ID to edit"
+        android:inputType="number"
+        android:digits="0123456789"/>
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:textAlignment="center" />
+
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Midterms"
+        tools:targetApi="31">
+        <activity
+            android:name=".info"
+            android:exported="false" />
+        <activity
+            android:name=".Help"
+            android:exported="false" />
+        <activity
+            android:name=".Shop"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_users_view"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_quiz_crud_edit"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_quiz_crud_view"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_users"
+            android:exported="false" />
+        <activity
+            android:name=".Admin"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_quiz_crud"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_quiz"
+            android:exported="false" />
+        <activity
+            android:name=".MusicScore"
+            android:exported="false" />
+        <activity
+            android:name=".TriviaScore"
+            android:exported="false" />
+        <activity
+            android:name=".MusicDifficulty"
+            android:exported="false" />
+        <activity
+            android:name=".MusicHardQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".MusicMediumQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".MusicEasyQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".TriviaHardQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".TriviaMediumQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".TriviaEasyQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".TriviaDifficulty"
+            android:exported="false" />
+        <activity
+            android:name=".Leaderboards"
+            android:exported="false" />
+        <activity
+            android:name=".ComputerScore"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".Congratulation"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".ComputerHardQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".ComputerMediumQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".ComputerEasyQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".ComputerDifficulty"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

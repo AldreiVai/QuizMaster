@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white"
+    tools:context=".ComputerDifficulty">
+
+    <LinearLayout
+        android:id="@+id/layoutCounters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/dollar" />
+        <TextView
+            android:id="@+id/tvCoinsCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font"
+            android:text=" : 0"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_marginEnd="32dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/twox" />
+        <TextView
+            android:id="@+id/tvScorex2Counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font"
+            android:text=" : 0"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_marginEnd="32dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/right_arrow" />
+        <TextView
+            android:id="@+id/tvSkipCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font"
+            android:text=" : 0"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_marginEnd="32dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/seconds" />
+        <TextView
+            android:id="@+id/tv30SecCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font"
+            android:text=" : 0"
+            android:textColor="#000000"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp"
+
+        >
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font"
+            android:text="[Username]"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/square_corners"/>
+
+        <!-- Trivia Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/square_corners">
+
+            <TextView
+                android:id="@+id/tvTriviaSectionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="Trivia"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvScoreTriviaEasy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="[Score Easy Trivia Quiz:]"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvScoreTriviaMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="[Score Medium Trivia Quiz:]"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvScoreTriviaHard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="[Score Hard Trivia Quiz:]"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- Computer Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/square_corners">
+
+            <TextView
+                android:id="@+id/tvComputerSectionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="Computer"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvScoreComputerEasy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="[Score Easy Computer Quiz:]"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvScoreComputerMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="[Score Medium Computer Quiz:]"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvScoreComputerHard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="[Score Hard Computer Quiz:]"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- Music Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/square_corners">
+
+            <TextView
+                android:id="@+id/tvMusicSectionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="Music"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvScoreMusicEasy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="[Score Easy Music Quiz:]"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvScoreMusicMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="[Score Medium Music Quiz:]"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvScoreMusicHard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font"
+                android:text="[Score Hard Music Quiz:]"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:layout_marginTop="16dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/font" />
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back to Home"
+            android:layout_marginTop="16dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/font" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

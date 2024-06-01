@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/white">
+
+    <TextView
+        android:id="@+id/textViewUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:fontFamily="@font/font"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewUsername"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/font"
+        android:textColor="#000000"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:background="@drawable/rounded_corners_two"/>
+
+    <TextView
+        android:id="@+id/textViewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextUsername"
+        android:text="Password"
+        android:fontFamily="@font/font"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPassword"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/font"
+        android:textColor="#000000"
+        android:inputType="textPassword"
+        android:imeOptions="actionNext"
+        android:background="@drawable/rounded_corners_two"/>
+
+    <TextView
+        android:id="@+id/textViewConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:text="Confirm Password"
+        android:fontFamily="@font/font"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewConfirmPassword"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/font"
+        android:textColor="#000000"
+        android:inputType="textPassword"
+        android:imeOptions="actionDone"
+        android:background="@drawable/rounded_corners_two"/>
+
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font"
+        android:textColor="#000000"
+        android:layout_below="@id/editTextConfirmPassword"
+        android:layout_marginTop="16dp"
+        android:text="Sign Up"
+        android:background="@drawable/rounded_corners"/>
+
+</RelativeLayout>
